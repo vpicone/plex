@@ -150,5 +150,4 @@ ${families
   )
   .join('\n')}`;
 
-console.log(`Writing scss to ${OUTPUT_DIRECTORY}`);
 fs.outputFileSync(`${OUTPUT_DIRECTORY}/ibm-plex.scss`, rootPartial, 'utf8');

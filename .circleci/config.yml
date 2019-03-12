@@ -42,3 +42,5 @@ jobs:
       - run:
           name: Build css
           command: npm run build:css
+      - store_artifacts:
+          path: css
