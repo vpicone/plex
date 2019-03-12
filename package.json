@@ -1,7 +1,7 @@
 {
   "name": "@vpicone/plex",
   "description": "The package of IBM’s typeface, IBM Plex",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "repository": "https://github.com/vpicone/plex.git",
   "license": "OFL-1.1",
   "keywords": [
