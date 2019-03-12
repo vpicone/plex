@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: vpicone@gmail.com
+  api_key:
+    secure: $NPM_API_KEY
+  on:
+    tags: true
+    repo: vpicone/plex
