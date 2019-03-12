@@ -3,8 +3,6 @@
  * need for each font family, supported weight, and unicode range.
  */
 
-'use strict';
-
 const fs = require('fs-extra');
 const path = require('path');
 const rimraf = require('rimraf');
@@ -151,4 +149,6 @@ ${families
     family => `@import '${family.type.replace(' ', '-').toLowerCase()}/index';`
   )
   .join('\n')}`;
+
+console.log(`Writing scss to ${OUTPUT_DIRECTORY}`);
 fs.outputFileSync(`${OUTPUT_DIRECTORY}/ibm-plex.scss`, rootPartial, 'utf8');
