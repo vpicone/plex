@@ -38,7 +38,7 @@ jobs:
           name: Build scss
           command: npm run build:scss
       - store_artifacts:
-          path: /scss
+          path: scss
       - run:
           name: Build css
           command: npm run build:css
