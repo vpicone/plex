@@ -24,13 +24,9 @@ jobs:
       - run:
           name: Build scss
           command: npm run build:scss
-      - store_artifacts:
-          path: scss
       - run:
           name: Build css
           command: npm run build:css
-      - store_artifacts:
-          path: css
       - persist_to_workspace:
           root: ~/repo
           paths: .
@@ -50,7 +46,7 @@ workflows:
   build-deploy:
     jobs:
       - build
-      - deploy-prod:
+      - deploy:
           requires:
             - build
           filters:
